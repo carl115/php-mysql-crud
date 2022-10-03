@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    font-family: 'Jost', sans-serif;
+}
+
+.window {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.window .content {
+    width: 500px;
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3),
+    0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.window.activate {
+    display: flex;
+}
+
+input.disabled {
+    background-color: #E9ECEF;
+    pointer-events: none;
+}
+
+nav {
+    width: 100%;
+    padding: 6px 30px;
+    position: fixed;
+    z-index: 20;
+}
+
+nav .content-user {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+nav .btn-nav {
+    padding: 15px 0;
+    margin: 0 20px;
+    border: none;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+}
+
+nav .btn-nav:focus {
+    border: none;
+}
+
+nav .btn-nav ion-icon {
+    margin: 0 5px 0 0;
+}
+ 
+nav .btn-nav:hover {
+    background: transparent;
+    border: none;
+    opacity: 1;
+}
+
+.main-content {   
+    padding: 75px 20px 0 20px;
+}
+  
+.main-content .inventory .card-body table tbody .alert-line {
+    width: 100%;
+    height: 100%;
+}
+  
+.main-content .inventory .card-body table tbody .alert-line .alert {
+    width: 280px;
+    margin: 70px auto;
+}
+  
+.main-content .settings {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.main-content .settings a {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.main-content .settings a ion-icon {
+    margin: 0 5px 0 0;
+    font-size: 20px;
+}
+  
+.main-content footer {
+    color: #909090;
+    font-size: 13px;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+td .btn-product {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+td .btn-product ion-icon {
+    font-size: 25px;
+}
+
+.submenu {
+    background: #313438;
+    width: 140px;
+    height: 0px;
+    padding: 0 0 0 20px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    right: 24px;
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: 30;
+}
+
+.submenu.open {
+    height: 80px;
+}
+
+.submenu a {
+    margin: 7px 0;
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submenu a:hover {
+    color: #ffffff;
+    opacity: 0.6;
+}
+
+.submenu ion-icon {
+    margin: 0 5px 0 0;
+}

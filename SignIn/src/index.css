@@ -1,0 +1,39 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card .card-body form .cont-input {
+    width: 100%;
+    height: 75px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card .card-body form .cont-input .title {
+    margin: 0;
+    position: relative;
+    transition: all 0.4s;
+    z-index: 2;
+}
+
+.card .card-body form .cont-input .select {
+    background: #ffffff;
+    width: 137px;
+    padding-left: 10px;
+    color: #86b7fe;
+    transform: translate(15px, 25px);
+    font-size: 13px;
+}
+
+.card .card-body form .cont-input input[type="text"],
+.card .card-body form .cont-input input[type="password"] {
+    position: relative;
+    bottom: 0;
+}
